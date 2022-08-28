@@ -19,6 +19,8 @@ export default class SortingVisualizer extends React.Component {
 
   heapSort() {}
 
+  bubbleSort() {}
+
   resetArray() {
     const larray = [];
     for (let i = 0; i < 310; ++i) {
@@ -45,6 +47,7 @@ export default class SortingVisualizer extends React.Component {
         <button onClick={() => this.mergeSort()}>merge sort</button>
         <button onClick={() => this.quickSort()}>quick sort</button>
         <button onClick={() => this.heapSort()}>heap sort</button>
+        <button onClick={() => this.bubbleSort()}>bubble sort</button>
       </div>
     );
   }
